@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sai Vamshi Krishna — Android Framework & Telephony Engineer</title>
+  <meta name="description" content="Portfolio of Sai Vamshi Krishna — Android Framework & Telephony Engineer (Telephony, RIL, eSIM, Qualcomm)." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#3b82f6;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:linear-gradient(180deg,#071027 0%, #0b1220 100%);color:#e6eef6}
+    .container{max-width:1000px;margin:36px auto;padding:28px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:14px;background:linear-gradient(135deg,#1f2937,#111827);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:28px}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .row{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:22px}
+    .card{background:var(--card);padding:18px;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+    .projects{display:flex;flex-direction:column;gap:12px}
+    .project{padding:14px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03)}
+    .project h3{margin:0 0 6px}
+    .meta{font-size:13px;color:var(--muted);margin-bottom:8px}
+    .cta a{display:inline-block;margin-right:8px;padding:8px 12px;border-radius:8px;background:linear-gradient(90deg,var(--accent),#60a5fa);color:#04263b;text-decoration:none;font-weight:600}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+    /* Experience list */
+    .exp{display:flex;flex-direction:column;gap:10px}
+    .exp-item{display:flex;justify-content:space-between;gap:12px}
+    .exp-item .left{max-width:70%}
+    /* Contact form */
+    form{display:flex;flex-direction:column;gap:8px}
+    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:8px;color:inherit}
+    input::placeholder,textarea::placeholder{color:var(--muted)}
+    button{border:0;padding:10px 12px;border-radius:10px;background:var(--accent);color:#04263b;font-weight:700}
+    @media (max-width:880px){.row{grid-template-columns:1fr;}.avatar{width:76px;height:76px;font-size:22px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">SV</div>
+      <div>
+        <h1>Sai Vamshi Krishna</h1>
+        <div style="display:flex;gap:10px;align-items:center;margin-top:6px">
+          <div style="font-weight:600;color:var(--muted)">Android Framework & Telephony Engineer</div>
+          <div style="color:var(--muted)">· Hyderabad, India</div>
+        </div>
+        <p class="lead">Specialised in Android Telephony, RIL, eSIM/EID management, and Qualcomm modem integration. I build reliable connectivity solutions that bridge modem & framework.</p>
+        <div style="margin-top:12px;display:flex;gap:10px">
+          <a class="cta" href="https://www.linkedin.com/in/saivamshikrishna29/" target="_blank">LinkedIn</a>
+          <a class="cta" href="#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="row">
+      <main>
+        <section class="card">
+          <h2 style="margin-top:0">About</h2>
+          <p>I’m an Android Framework Engineer with experience across telephony layers — from RIL and HAL integrations to framework PreferenceControllers and system stability. I enjoy digging into JNI crashes, eSIM workflows, and optimizing IMS/VoLTE flows for carrier compliance.</p>
+        </section>
+
+        <section class="card" style="margin-top:14px">
+          <h2 style="margin-top:0">Projects</h2>
+          <div class="projects">
+            <article class="project">
+              <h3>Multi-SIM eSIM EID Manager</h3>
+              <div class="meta">Kotlin · Android Framework · PreferenceController</div>
+              <p>Implemented per-slot `SimEidPreferenceController` logic to display and manage EIDs across multiple SIM slots. Introduced lifecycle-aware updates and thread-safe EID storage.</p>
+              <div style="margin-top:8px"><strong>Key contributions:</strong> LiveData observers, slot-based controller construction, null-safe EID handling.</div>
+            </article>
+
+            <article class="project">
+              <h3>IMS User Agent Builder (Qualcomm Integration)</h3>
+              <div class="meta">Java · IMS · Qualcomm</div>
+              <p>Constructed carrier-compliant IMS User Agent strings using QMI outputs and system properties to reduce registration failures and align with operator requirements.</p>
+            </article>
+
+            <article class="project">
+              <h3>EID Status Handler — Thread-Safe Migration</h3>
+              <div class="meta">Java · Concurrency</div>
+              <p>Migrated EID storage from HashMap to `ConcurrentHashMap`/AtomicReferences to prevent data races and improve consistency during concurrent updates.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:14px">
+          <h2 style="margin-top:0">Experience</h2>
+          <div class="exp">
+            <div class="exp-item">
+              <div class="left">
+                <strong>Android Framework Engineer — (Current)</strong>
+                <div style="color:var(--muted);font-size:13px">Worked on telephony modules for Qualcomm-based devices; improved eSIM activation & stability.</div>
+              </div>
+              <div style="text-align:right;color:var(--muted)">2024 – Present</div>
+            </div>
+
+            <div class="exp-item">
+              <div class="left">
+                <strong>Telephony Intern — (Previous)</strong>
+                <div style="color:var(--muted);font-size:13px">Supported RIL debugging, log analysis, and VoLTE test cases during platform bring-up.</div>
+              </div>
+              <div style="text-align:right;color:var(--muted)">2023</div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <aside>
+        <section class="card">
+          <h3 style="margin-top:0">Skills</h3>
+          <div class="skills" style="margin-top:8px">
+            <div class="chip">Java</div>
+            <div class="chip">Kotlin</div>
+            <div class="chip">Android Telephony</div>
+            <div class="chip">RIL & QMI</div>
+            <div class="chip">eSIM / EID</div>
+            <div class="chip">IMS / VoLTE</div>
+            <div class="chip">AOSP / Builds</div>
+            <div class="chip">Logcat / QXDM</div>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:14px">
+          <h3 style="margin-top:0">Education</h3>
+          <div style="color:var(--muted)">B.Tech — Electronics & Communication<br>Osmania University</div>
+        </section>
+
+        <section class="card" style="margin-top:14px">
+          <h3 style="margin-top:0">Quick Links</h3>
+          <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+            <a href="https://www.linkedin.com/in/saivamshikrishna29/" target="_blank" style="text-decoration:none;color:var(--accent)">LinkedIn</a>
+            <a href="#contact" style="text-decoration:none;color:var(--accent)">Contact</a>
+            <a href="#" style="text-decoration:none;color:var(--accent)">GitHub (add your link)</a>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <section id="contact" class="card" style="margin-top:18px">
+      <h2 style="margin-top:0">Contact</h2>
+      <p style="margin-top:0;color:var(--muted)">Want to collaborate or hire me? Send a note.</p>
+      <form action="mailto:saivamshi@example.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <textarea name="message" rows="5" placeholder="Message" required></textarea>
+        <div style="display:flex;gap:8px;align-items:center">
+          <button type="submit">Send</button>
+          <a href="mailto:saivamshi@example.com" style="color:var(--muted);text-decoration:none">Or email directly</a>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <div>Made by <strong>Sai Vamshi Krishna</strong> — Android Framework & Telephony Engineer</div>
+      <div style="margin-top:8px">Download: <a href="#" style="color:var(--accent)">Resume (PDF)</a> — or export this page as HTML</div>
+    </footer>
+  </div>
+</body>
+</html>
